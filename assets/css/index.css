@@ -1,0 +1,111 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main div.text h1 {
+  color: aliceblue;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+main div.text h2 {
+  font-size: 9em;
+  color: #7fffd4;
+  font-weight: 700;
+}
+
+main div.text p {
+  color: aliceblue;
+}
+
+main div.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+main div.cards div.card {
+  width: 250px;
+  height: 120px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 15px;
+  background: #2f2841;
+  justify-content: space-around;
+}
+
+main div.cards div.card:hover {
+  opacity: .7;
+}
+
+main div.cards div.card h1 {
+  color: #7fffd4;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+main div.cards div.card h3 {
+  color: aliceblue;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+main div.cards div.card img {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer a.about {
+  color: #000;
+  width: 200px;
+  font-weight: 500;
+  padding: 10px 30px;
+  border-radius: 20px;
+  background: #7fffd4;
+  transition: .3s all ease-in-out;
+}
+
+footer a.about:hover {
+  opacity: 0.7;
+}
+
+footer ul {
+  gap: 20px;
+  display: flex;
+  filter: invert(1);
+}
+
+footer ul li {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #b3b3b3;
+}
+
+footer ul li:hover {
+  opacity: 0.7;
+}
+
+footer ul li a img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  main div.cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,68 @@
+main{
+  padding: 20px;
+}
+main a.add{
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  background: #0d749c;
+}
+table {
+  width: 100%;
+  color: #fff;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+table thead tr th{
+  text-align: left;
+  padding: 10px 15px;
+  background: #197455;
+}
+table thead tr th:last-child{
+  text-align: center;
+}
+table tbody tr{
+  margin: 1.5px 0px;
+  background: #25334e;
+}
+table tbody tr td{
+  text-align: left;
+  padding: 10px 15px;
+}
+table tbody tr td:last-child{
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+table tbody tr td a{
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+table tbody tr td a.edit{
+  background: #0d749c;
+}
+table tbody tr td a.delete{
+  background: #b80e0e;
+}
+table tbody tr td span{
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 8px;
+  cursor: not-allowed;
+}
+table tbody tr td span:first-child{
+  background: #0d749c;
+}
+table tbody tr td span:last-child{
+  background: #b80e0e;
+}
+table tbody tr td span:first-child:hover, 
+table tbody tr td span:last-child:hover{
+  background-color: gray;
+}
